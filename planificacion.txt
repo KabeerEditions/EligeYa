@@ -1,0 +1,20 @@
+Que datos guardara en cada documento:
+1- Lista con las opciones (COMPLETADO)
+2- Lista con los votos de cada opcion (COMPLETADO)
+3- Lista con los porcentajes (para que no tenga que calcular todo el rato, no estoy seguro de hacer esto)
+4- Total de personas que han votado (COMPLETADO)
+5- Estado de la votacion (si ha acabado o sigue en curso) (COMPLETADO)
+6- Que clase tiene cada opcion (si la de perdiendo o ganando, no estoy seguro si hacer esto)
+7- El tema de la votacion (COMPLETADO)
+8- Fecha de creacion (COMPLETADO)
+9- Quien ha creado la votacion (COMPLETADO)
+
+Pantalla de registro:
+1- El nombre del usuario se ponga en minuscula (COMPLETADO)
+2- Verificar que su nombre no tenga caracteres no permitidos por firebase (COMPLETADO)
+3- Verificar que el usuario no existe (COMPLETADO)
+4- Encriptar la contraseña (COMPLETADO)
+
+Pantalla de login:
+1- El usuario exista, si no, se avisa directamente al usuario (COMPLETADO)
+2- Si el usuario existe, comprobara la contraseña (COMPLETADO)

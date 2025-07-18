@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <title>EligeYa</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:regular,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:regular">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:regular,800">
+    <link rel="stylesheet" href="style.css" />
+    <script src="jQuery.js"></script>
+    <script src="script.js" type="module"></script>
+</head>
+
+<body class="claro">
+    <header>
+        <div id="header">
+            <div id="headerLadoIzquierdo">
+                <button id="cerrarSesion" class="claro"><span>Cerrar sesión</span></button>
+            </div>
+            <div id="headerLadoDerecho">
+                <p>Bienvenido <span class="nombreUsuario">hacker</span></p>
+                <img id="tema" src="Images/claro.svg" alt="" class="claro">
+            </div>
+        </div>
+
+        <div id="mensajeParaError_2">
+            <p class="errorMensaje">Ha ocurrido un error</p>
+        </div>
+    </header>
+    <div id="header_2" class="claro">
+        <div id="informacionVotacionArriba">
+            <div>
+                <button id="salirSala" class="claro"><span>Salir de la sala</span></button>
+                <img src="Images/claro.svg" alt="" id="tema2" class="claro">
+            </div>
+            <div>
+                <div id="estadoVotacion"></div>
+            </div>
+        </div>
+        <div id="mensajeParaError">
+            <p class="errorMensaje">Ha ocurrido un error</p>
+        </div>
+    </div>
+
+    <div id="pantallaError" class="claro">
+        <h1>NO PUEDES ENTRAR</h1>
+        <div class="card claro">
+            <h2>No tienes acceso, inicia sesión o registrate</h2>
+            <img src="Images/prohibido.svg" alt="">
+        </div>
+    </div>
+    <div id="pantallaInicio" class="claro">
+        <h1>VOTACIONES EN LINEA</h1>
+        <div id="menuCrearVotacion" class="card claro">
+            <h2>CREA TU VOTACION</h2>
+            <div id="tematicaOpciones">
+                <input type="text" placeholder="Indica el tema de la votacion" id="temaVotacion">
+                <div id="Opciones">
+                    <div class="Opcion1 opcion">
+                        <input id="Opcion-0" type="text" placeholder="Opcion 1">
+                        <button class="Opcion1 claro"><img src="Images/636163.png" alt=""></button>
+                    </div>
+                    <div class="Opcion2 opcion">
+                        <input id="Opcion-1" type="text" placeholder="Opcion 2">
+                        <button class="Opcion2 claro"><img src="Images/636163.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div id="opcionesCrearVotacion">
+                <div>
+                    <input type="checkbox" name="" id="quiereParticipar">
+                    <p>No quiero participar en la votacion</p>
+                </div>
+                <div>
+                    <p>Finalizar automaticamente la votacion en:</p>
+                    <select name="" id="finalizarAutomaticamente">
+                        <option value="1">1 hora</option>
+                        <option value="2">2 horas</option>
+                        <option value="3">3 horas</option>
+                        <option value="4">4 horas</option>
+                        <option value="5">5 horas</option>
+                    </select>
+                </div>
+            </div>
+            <div id="botonesVotacion" class="claro">
+                <button id="añadirOpcion" class="claro">Añadir opcion</button>
+                <button id="crearVotacion" class="claro">Crear votacion🚀</button>
+            </div>
+        </div>
+
+        <div id="buscarVotacion" class="card claro">
+            <h2>🔎BUSCA UNA VOTACION🔍</h2>
+            <div>
+                <input type="text" placeholder="Codigo de la votacion" id="codigoBucar">
+                <div id="BotonesBuscar">
+                    <button id="buscar" class="claro">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="informacionVotacionAbajo" class="claro">
+        <div id="personasVotadoFijo" class="claro">👤 Votaron: <span id="personasVotado">0</span></div>
+        <div id="codigoFijo" class="claro">🆔 Código: <span id="codigo">XXXXXX</span></div>
+    </div>
+    <div id="pantallaVotar" class="claro">
+        <h1>¡HORA DE VOTAR!</h1>
+        <div class="card claro">
+            <h2 class="tema"></h2>
+            <div id="opcionesParaVotar">
+            </div>
+        </div>
+    </div>
+    <div id="pantallaVotaciones" class="claro">
+        <h1>¡MIRA LA OPCION QUE VA GANANDO!</h1>
+        <div class="card claro">
+            <h2 id="tematica" class="tema"></h2>
+            <div id="barrasOpciones">
+
+            </div>
+            <button id="FinalizarVotacion" class="claro">FINALIZAR LA VOTACION</button>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p>Creado por KabeerEditions</p>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/k.a.b.ee.r/" target="_blank"><img src="Images/instagram.svg" alt=""></a>
+            <a href="https://github.com/KabeerEditions" target="_blank"><img src="Images/github.svg" alt=""></a>
+        </div>
+    </footer>
+</body>
+
+</html>

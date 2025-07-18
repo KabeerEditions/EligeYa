@@ -1,0 +1,647 @@
+#pantallaInicio {
+  display: block;
+}
+
+#pantallaVotaciones {
+  display: block;
+}
+
+#pantallaVotar {
+  display: block;
+}
+
+#pantallaError {
+  display: block;
+}
+
+#informacionVotacionAbajo {
+  display: block;
+}
+
+#informacionVotacionArriba {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f9fafb;
+  background-color: #202124;
+  padding: 15px;
+  z-index: 2;
+  position: relative;
+}
+
+#header_2 {
+  display: none;
+  margin: 0px 30px 0px 0px;
+  position: fixed;
+  width: 100%;
+}
+
+#informacionVotacionArriba img {
+  width: 30px;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+
+#informacionVotacionArriba div {
+  display: flex;
+}
+
+#pantallaInicioSesion {
+  display: block;
+}
+
+#pantallaRegistro {
+  display: none;
+}
+
+#pantallaInicioSesion .card, #pantallaRegistro .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#opcionesCrearVotacion div {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+#opcionesCrearVotacion p {
+  font-weight: 500;
+  margin: 0px 5px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+#header {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #202124;
+  color: #f9fafb;
+}
+
+header img {
+  width: 30px;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+
+.claro {
+  color: #202124;
+}
+
+.oscuro {
+  color: #f9fafb;
+}
+
+#headerLadoDerecho {
+  display: flex;
+  align-items: center;
+}
+
+#headerLadoIzquierdo {
+  display: flex;
+  align-items: center;
+}
+
+#mensajeParaError, #mensajeParaError_2 {
+  display: none;
+  text-align: center;
+  background-color: #e136369c;
+  padding: 10px;
+  z-index: 1;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #202124;
+  color: #f9fafb;
+  padding: 50px 20px 50px 20px;
+  font-size: 25px;
+  margin-top: auto;
+}
+
+footer div img {
+  transition: all 0.5s ease;
+  width: 50px;
+  margin: 0px 0px 0px 20px;
+}
+
+footer div img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  margin: 0px 0px 0px 20px;
+}
+
+p {
+  margin: 0px 0px 0px 0px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+body.claro {
+  background-color: #f9fafb;
+  color: #202124;
+}
+
+body.oscuro {
+  color: #f9fafb;
+  background-color: #121212;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Estilo de tarjetas / bloques */
+.card {
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin: 50px auto;
+  width: 60%;
+
+}
+
+.card.claro {
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  color: #202124;
+}
+
+.card.oscuro {
+  border: 1px solid #34353a;
+  background-color: #1E1E1E;
+  color: #f9fafb;
+}
+
+.card h2 {
+  margin: 0px 0px 30px 0px;
+}
+
+/* Estilos generales de inputs */
+input[type="text"],  input[type="password"]{
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Sección de creación */
+#tematicaOpciones {
+  display: flex;
+  flex-direction: column;
+}
+
+#tematicaOpciones input {
+  width: 60%;
+  max-width: 400px;
+}
+
+#Opciones {
+  display: flex;
+  flex-direction: column;
+}
+
+#Opciones input {
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Botones */
+button {
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  padding: 12px 20px;
+  background-color: #1a73e8;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button.claro {
+  color: white;
+}
+
+button.oscuro {
+  color: #202124;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #1764c9;
+  transform: scale(1.02);
+}
+
+#crearVotacion:hover {
+  background-color: #34a853;
+}
+
+#botonesVotacion {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Buscador */
+#buscarVotacion input {
+  width: 50%;
+  max-width: 400px;
+}
+
+#BotonesBuscar {
+  margin-top: 20px;
+}
+
+#BotonesBuscar button {
+  margin-top: 10px;
+}
+
+#Opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Espacio entre opciones */
+}
+
+/* Contenedor de cada opción (input + botón eliminar) */
+#Opciones > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Estilo para el input de las opciones */
+#Opciones input {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Botón de eliminar */
+#Opciones div button {
+  background-color: #EA4335;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#Opciones div button:hover {
+  background-color: #cc342f;
+  transform: scale(1.1);
+}
+
+/* Imagen dentro del botón */
+#Opciones div img {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+/* CONTENEDORES FIJOS */
+#codigoFijo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  z-index: 1000;
+}
+
+#codigoFijo.claro {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+}
+
+#codigoFijo.oscuro {
+  background-color: #1E1E1E;
+  border: 1px solid #34353a;
+}
+
+#personasVotadoFijo {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  z-index: 1000;
+}
+
+#personasVotadoFijo.claro {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+}
+
+#personasVotadoFijo.oscuro {
+  box-shadow: 0 2px 6px rgba(219, 218, 218, 0.1);
+  background-color: #1E1E1E;
+  border: 1px solid #34353a;
+}
+
+/* BARRAS DE OPCIONES */
+#barrasOpciones {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cajaBarra {
+  background-color: #e0e0e0;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.barra {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  transition: width 0.3s ease;
+}
+
+.barra span.porcentaje {
+  position: relative;
+  z-index: 2;
+}
+
+/* COLORES: solo simulando que la primera gana */
+
+.barra {
+  width: 0%;
+  transition: all 0.5s ease;
+}
+
+.ganando {
+  background-color: #67e388b3;
+}
+
+.perdiendo {
+  background-color: #e0695cb3;
+}
+
+#FinalizarVotacion {
+  display: none;
+  margin: 30px 0px 0px 0px;
+}
+
+#estadoVotacion {
+  text-align: center;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin: 10px 20px;
+}
+
+.activa {
+  background-color: #34a853;
+  animation: parpadeo 1s infinite;
+  box-shadow: 0 0 10px rgba(52, 168, 83, 0.5);
+}
+
+.finalizada {
+  background-color: #c62828;
+  box-shadow: 0 0 10px rgba(168, 54, 52, 0.5);
+}
+
+@keyframes parpadeo {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+#tematica {
+  margin: 0px 0px 30px 0px;
+}
+
+.OpcionVotacion {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+#FinalizarVotacion:hover {
+  background-color: #EA4335;
+}
+
+.elecion {
+  margin: 20px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.elecion p {
+  margin: 0px 10px 0px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+#opcionesParaVotar div button {
+  transition: all 0.5 ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+#opcionesParaVotar div button span {
+  display: inline-block;
+  transition: all 0.5s ease;
+  position: relative;
+  z-index: 1;
+}
+
+#opcionesParaVotar div button:hover span {
+  transform: translateX(-150%);
+}
+
+#opcionesParaVotar div button::after {
+  transition: all 0.5s ease;
+  content: "¿SEGURO?";
+  position: absolute;
+  right: -100%;
+}
+
+#opcionesParaVotar div button:hover {
+  transform: scale(1.07) rotate(-3deg);
+  background-color: #c62828;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+#opcionesParaVotar div button:hover::after {
+  right: 6%;
+}
+
+#botonesInicioSesion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#botonesInicioSesion button{
+  margin: 10px;
+}
+
+#botonesRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#botonesRegistro button{
+  margin: 10px;
+}
+
+#cerrarSesion, #salirSala {
+  transition: all 0.5s ease;
+  background-color: #cc342f;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#cerrarSesion span, #salirSala  span{
+  display: inline-block;
+  transition: all 0.5s ease;
+  position: relative;
+  z-index: 1;
+}
+
+#cerrarSesion::after, #salirSala::after {
+  transition: all 0.5s ease;
+  content: "¿Seguro?";
+  position: absolute;
+  left: 100%;
+}
+
+#cerrarSesion:hover, #salirSala:hover{
+  transform: scale(1.2) rotate(-3deg);
+  background-color: #981717;
+}
+
+#cerrarSesion:hover span, #salirSala:hover span{
+  transform: translateX(-150%);
+}
+
+#cerrarSesion:hover::after, #salirSala:hover::after {
+  position: absolute;
+  left: 50%;
+  font-size: 20px;
+  transform: translateX(-50%);
+}
+
+.mensajeError {
+  color: #c62828;
+  font-size: 15px;
+  font-weight: 500;
+  display: none;
+}
+
+.campoFormulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+}
+
+#pantallaError div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#pantallaError div img{
+  width: 300px;
+}
+
+h1 {
+  margin: 150px 0px 0px 0px;
+}
+
+#opcionesCrearVotacion select {
+  padding: 10px 40px 10px 15px; /* Deja espacio a la derecha para la flecha */
+  border-radius: 12px;
+  font-size: 15px;
+  border: 1px solid;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+
+/* CLARO */
+body.claro #opcionesCrearVotacion select {
+  background-color: #ffffff;
+  color: #202124;
+  border-color: #ccc;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23202124' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+}
+
+/* OSCURO */
+body.oscuro #opcionesCrearVotacion select {
+  background-color: #1E1E1E;
+  color: #f9fafb;
+  border-color: #444;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23f9fafb' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+}
+
+/* Opciones internas */
+#opcionesCrearVotacion select option {
+  background-color: inherit;
+  color: inherit;
+}

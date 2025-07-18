@@ -1,0 +1,10 @@
+Paleta de colores: 
+Color primario	#1A73E8 (azul Google)	Botones, enlaces, resaltados
+Color secundario	#34A853 (verde)	Confirmaciones, resultados positivos
+Color de advertencia	#EA4335 (rojo)	Errores, mensajes críticos
+Fondo claro	#F9FAFB	Fondo general
+Fondo oscuro	#202124	Modo oscuro (opcional)
+Texto principal	#202124	Títulos y texto principal
+Texto secundario	#5F6368	Subtítulos, descripciones
+
+Texto:

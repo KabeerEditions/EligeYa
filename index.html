@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <title>EligeYa</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:regular,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:regular">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:regular,800">
+    <link rel="stylesheet" href="style.css" />
+    <script src="jQuery.js"></script>
+    <script src="login.js" type="module"></script>
+</head>
+
+<body class="claro">
+    <div id="pantallaInicioSesion">
+        <h1 class="claro">INICIAR SESIÓN</h1>
+        <div class="card">
+            <h2 class="claro">ACCEDE A TU CUENTA</h2>
+            <div id="formularioInicioSesion" class="campoFormulario">
+                <p class="mensajeError"></p>
+                <p class="claro">Nombre de usuario</p>
+                <input type="text" placeholder="Introduce tu usuario" id="usuarioLogin">
+                <p class="claro">Contraseña</p>
+                <input type="password" placeholder="Introduce tu contraseña" id="contrasenyaLogin">
+                <div id="botonesInicioSesion">
+                    <button id="IniciarSesion" class="claro">INICIAR SESIÓN</button>
+                    <p class="claro">¿No tienes cuenta?</p>
+                    <button id="Registrarse_InicioSesion" class="claro">Registrate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pantallaRegistro" class="claro">
+        <h1>REGISTRO</h1>
+        <div class="card claro">
+            <h2 class="claro">CREA TU CUENTA</h2>
+            <div id="formularioRegistro" class="campoFormulario" class="claro">
+                <p class="mensajeError"></p>
+                <p>Nombre de usuario</p>
+                <input type="text" placeholder="Introduce tu usuario" id="usuarioRegistro">
+                <p>Contraseña</p>
+                <input type="password" placeholder="Introduce tu contraseña" id="contrasenyaRegistro">
+                <div id="botonesRegistro">
+                    <button id="Registrarse" class="claro">REGISTRARSE</button>
+                    <p>¿Ya tienes cuenta?</p>
+                    <button id="IniciarSesion_Registro" class="claro">Inicia sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
