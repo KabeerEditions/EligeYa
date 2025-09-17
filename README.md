@@ -19,7 +19,7 @@
 
 Puedes probar la aplicación aquí:
 
-🔗 [https://elige-ya.web.app](https://elige-ya.web.app) *(Cambia este enlace si usas otro hosting)*
+🔗 [https://elige-ya.web.app](https://votaciones-online-fb685.web.app/)
 
 ---
 
